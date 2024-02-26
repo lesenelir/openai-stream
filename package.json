@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "lesenelir <hi@lesenelir.me>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
