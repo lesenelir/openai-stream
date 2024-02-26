@@ -5,11 +5,17 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  dotenv:
+    specifier: ^16.4.5
+    version: 16.4.5
   openai:
     specifier: ^4.28.0
     version: 4.28.0
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.11.20
+    version: 20.11.20
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -19,7 +25,7 @@ packages:
   /@types/node-fetch@2.6.11:
     resolution: {integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==}
     dependencies:
-      '@types/node': 18.19.18
+      '@types/node': 20.11.20
       form-data: 4.0.0
     dev: false
 
@@ -28,6 +34,11 @@ packages:
     dependencies:
       undici-types: 5.26.5
     dev: false
+
+  /@types/node@20.11.20:
+    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
+    dependencies:
+      undici-types: 5.26.5
 
   /abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -76,6 +87,11 @@ packages:
     dependencies:
       base-64: 0.1.0
       md5: 2.3.0
+    dev: false
+
+  /dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
     dev: false
 
   /event-target-shim@5.0.1:
@@ -184,7 +200,6 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: false
 
   /web-streams-polyfill@3.3.3:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}

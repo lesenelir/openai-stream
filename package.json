@@ -11,9 +11,11 @@
   "author": "lesenelir <hi@lesenelir.me>",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "openai": "^4.28.0"
   },
   "devDependencies": {
+    "@types/node": "^20.11.20",
     "typescript": "^5.3.3"
   }
 }
